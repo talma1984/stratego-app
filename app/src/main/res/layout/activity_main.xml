@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sapa"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:text="login"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large.Inverse"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="username"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:hint="your username"
+        android:inputType="text"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="Password:"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:fontFamily="sans-serif"
+        android:hint="your password"
+        android:inputType="textPassword"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="210dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button1"
+            android:onClick="btnSignupClicked"
+            android:text="Signup"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            style="@android:style/Widget.Button"
+            android:layout_width="210dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button1"
+            android:onClick="btnLoginClicked"
+            android:text="Login"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

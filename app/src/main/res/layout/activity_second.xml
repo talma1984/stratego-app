@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/saharadesert2"
+
+    tools:context=".MainMenu">
+
+    <TextView
+        android:id="@+id/textmenu"
+        android:layout_width="308dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="main menu"
+        android:textAllCaps="true"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="45sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/vsplayer"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button1"
+        android:elevation="0dp"
+        android:onClick="btnStartNewGame"
+        android:text="Player Vs Player"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textmenu" />
+
+    <Button
+        android:id="@+id/vscomputer"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button1"
+        android:onClick="quickGame"
+        android:text="Quick Game"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/vsplayer"
+        app:layout_constraintTop_toBottomOf="@+id/textmenu" />
+
+    <Button
+        android:id="@+id/rules"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button1"
+        android:elevation="0dp"
+        android:onClick="btnGameRules"
+        android:text="rules"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vsplayer" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button1"
+        android:onClick="btnLogoutClicked"
+        android:text="logout"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/rules"
+        app:layout_constraintTop_toBottomOf="@+id/vscomputer" />
+
+    <TextView
+        android:id="@+id/lblMessage"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rules" />
+
+    <Button
+
+        android:id="@+id/button"
+        android:layout_width="134dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/user1"
+        android:onClick="btnGoToProfile"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

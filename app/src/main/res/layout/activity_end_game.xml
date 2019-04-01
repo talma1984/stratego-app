@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EndGame"
+    android:background="@drawable/saharadesrt1">
+
+    <Button
+        android:layout_width="201dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/button1"
+        android:fontFamily="sans-serif"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="goToMainMenu"
+        android:text="Back To Main Game"/>
+
+    <Button
+        android:id="@+id/creatnewgame"
+        android:layout_width="218dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/button2"
+        android:onClick="btnCreateNewGame"
+        android:text="create game"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/joinGame"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/joinGame"
+        android:layout_width="217dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/button2"
+        android:onClick="btnQuickGame"
+        android:text="quick game"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="217dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/button2"
+        android:onClick="btnexit"
+        android:text="exit "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creatnewgame" />
+
+
+
+</android.support.constraint.ConstraintLayout>

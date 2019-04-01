@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "706981347289",
+    "firebase_url": "https://stratego-5dd45.firebaseio.com",
+    "project_id": "stratego-5dd45",
+    "storage_bucket": "stratego-5dd45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706981347289:android:9540672a91924b9a",
+        "android_client_info": {
+          "package_name": "com.example.user.stratego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706981347289-5084hr4s6tvhk73bi943e8jmj0etg1f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkfPX10NfVOkh9YM8Zxdo1XRrxaJDHIyw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

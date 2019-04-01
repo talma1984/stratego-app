@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateGame"
+    android:background="@drawable/saharadesrt1">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Create Game"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="272dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/creatnewgame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="choose_map"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+
+        <RadioButton
+            android:id="@+id/sibiriaMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnChooseMap"
+            android:text="sibiria"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/islandMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnChooseMap"
+            android:text="island"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/amazonasMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnChooseMap"
+            android:text="amazonas"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/SaharaMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnChooseMap"
+            android:text="sahara_desert"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/creatnewgame"
+        android:layout_width="233dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/button2"
+        android:onClick="Create"
+        android:text="create"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:layout_width="201dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/button1"
+        android:fontFamily="sans-serif"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="goToMainMenu"
+        android:text="Back To Main Game"/>
+</android.support.constraint.ConstraintLayout>

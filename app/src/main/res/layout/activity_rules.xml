@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/amazonas11"
+    tools:context=".Rules">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="383dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:text="hello and welcom to Strateg  the goal is to capture you're enemy's flag. If the rank of the attacker and the defender is the same, the attacker gets to live. you can move only 1 tile in all 9 directions  (0) Flag x1) (2)spy x1, Kill only the major, loses to everyone else. (3)private x5, Loses to everyone excepts to other privates. (4)bomb squad x3, Kills  2,3 and bombs (5)sergeant x3, Kills 2,3,4 (6) lieutenant x2, Kills 2,3,4,5 (7)major x1, kills 2,3,4,5,6,7 Loses to spy. (8)bomb x4, Kills everyone except the bomb squad "
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="201dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/button1"
+        android:fontFamily="sans-serif"
+        android:onClick="goToMainMenu"
+        android:text="Back To Main Game"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
